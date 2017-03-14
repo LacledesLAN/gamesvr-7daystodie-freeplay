@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This file holds the settings for who is banned, whitelisted, admins, moderators, and server command permissions.
+	Steam ID can be found using http://steamid.co/
+
+	STEAM ID INSTRUCTIONS:
+	================================================== =============
+	http://steamid.co/ instructions:
+	Input the player's name in the search field. example: Kinyajuu
+	If the name doesn't work, you can also use the url of their steam page.
+	Also you may add/remove admins, mods, whitelist, blacklist using in game commands.
+	You will want the STEAM64ID. example: 76561198021925107
+
+	PERMISSION LEVEL INSTRUCTIONS:
+	================================================== =============
+	permission level : 0-1000, a user may run any command equal to or above their permission level.
+
+	COMMAND PERMISSIONS INSTRUCTIONS:
+	================================================== =============
+	cmd : This is the command name, any command not in this list will not be usable by anyone but the server.
+	permission level : 0-1000, a user may run any command equal to or above their permission level.
+-->
+
+<adminTools>
+    <admins>
+		<admin steamID="76561198035321882" permission_level="0" /> <!-- Andy T -->
+		<admin steamID="76561197967875166" permission_level="0" /> <!-- BEan -->
+		<admin steamID="76561197967563669" permission_level="0" /> <!-- Duds -->
+		<!-- <admin steamID="add Guid" permission_level="0" /> -->
+    </admins>
+	<moderators>
+		<moderator steamID="76561197973303482" permission_level="10" /> <!-- Joe -->
+		<moderator steamID="76561197969596106" permission_level="10" /> <!-- Tony D -->
+		<moderator steamID="76561197964841820" permission_level="15" /> <!-- Brian W -->
+		<moderator steamID="76561197961771954" permission_level="15" /> <!-- Adam K -->
+		<moderator steamID="76561197973503307" permission_level="15" /> <!-- Kevin B -->
+		<moderator steamID="76561197970954013" permission_level="15" /> <!-- Mel -->
+		<moderator steamID="76561197965179213" permission_level="15" /> <!-- Ryan H -->
+		<!-- <moderator steamID="add Guid" permission_level="1" /> -->
+	</moderators>
+
+	<permissions>
+		<permission cmd="admin" permission_level="0" /><!-- admin control -->
+		<permission cmd="aiddebug" permission_level="0" /> <!-- Toggles AIDirector debug output. -->
+		<permission cmd="ban" permission_level="10" /> <!-- Bans user -->
+		<permission cmd="cc" permission_level="10" /> <!-- Shows all loaded chunks in cache -->
+		<permission cmd="cp" permission_level="0" /> <!-- command permission control -->
+		<permission cmd="dm" permission_level="0" /> <!-- Enables/disables debug menu -->
+		<permission cmd="es" permission_level="0" /> <!-- enablescope toggle debug scope -->
+		<permission cmd="go" permission_level="0" /> <!-- gameover sets the game state to GameOver -->
+		<permission cmd="kick" permission_level="10" /> <!-- Kicks user -->
+		<permission cmd="le" permission_level="0" /> <!--  List all entities -->
+		<permission cmd="lp" permission_level="10" /> <!-- List all players -->
+		<permission cmd="lt" permission_level="0" /> <!-- listthreads lists all threads -->
+		<permission cmd="say" permission_level="10" /> <!-- Sends a message to all connected clients -->
+		<permission cmd="sc" permission_level="0" /> <!-- showchunkdata shows some date of the current chunk -->
+		<permission cmd="se" permission_level="10" /> <!-- Spawn entity -->
+		<permission cmd="shutdown" permission_level="0" /> <!-- Shut down the game -->
+		<permission cmd="sg" permission_level="0" /> <!-- setgamepref sets a game pref -->
+		<permission cmd="sounddebug" permission_level="0" /> <!-- Toggles SoundManager debug output. -->
+		<permission cmd="spawnwanderinghorde" permission_level="10" /> <!-- Spawns a wandering horde of zombies -->
+		<permission cmd="st" permission_level="10" /> <!-- Set the time -->
+		<permission cmd="mem" permission_level="0" /> <!-- Print information about current memory consumption of the server and call garbage collector -->
+		<permission cmd="mod" permission_level="0" /> <!-- mod control -->
+		<permission cmd="whitelist" permission_level="0" /> <!-- whitelist control -->
+		<!-- <permission cmd="" permission_level="0" /> -->
+	</permissions>
+
+	<!-- ONLY PUT ITEMS IN WHITELIST IF YOU WANT WHITELIST ONLY ENABLED!!! -->
+	<!-- If there are any items in the whitelist, the whitelist only mode is enabled -->
+	<!-- Nobody can join that ISN'T in the whitelist once whitelist only mode is enabled -->
+
+	<whitelist>
+		<!-- <whitelisted steamID="" permission_level="" /> -->
+	</whitelist>
+
+	<blacklist>
+		<!-- <blacklisted steamID="" unbandate="" /> -->
+	</blacklist>
+</adminTools> 
