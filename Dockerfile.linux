@@ -2,14 +2,17 @@
 
 FROM lacledeslan/gamesvr-srcds-7daystodie:linux
 
-MAINTAINER Laclede's LAN <contact@lacledeslan.com>
+LABEL maintainer "Laclede's LAN <contact@lacledeslan.com>"
 
-ENV IMAGE_NAME="gamesvr-srcds-7daystodie-freeplay:linux"
+ENV IMAGE="gamesvr-srcds-7daystodie-freeplay:linux"
 
-USER root
+HEALTHCHECK NONE
 
-COPY ./dist /app/bin/
-
+# UPDATE USERNAME
 RUN usermod -l 7DaysToDieFreeplay 7DaysToDie
 
 USER 7DaysToDieFreeplay
+
+COPY ./dist /app/bin/
+
+WORKDIR /app/bin/
