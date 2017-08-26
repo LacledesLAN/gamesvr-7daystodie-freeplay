@@ -2,7 +2,7 @@
 <ServerSettings>
   <property name="ServerPort" value="26900"/> <!-- Port you want the server to listen on. -->
   <property name="ServerIsPublic" value="false"/> <!-- Should this server register to master server -->
-  <property name="ServerName" value="Something clever"/> <!-- Whatever you want the name to be. -->
+  <property name="ServerName" value="LacledesLAN 7daystodie"/> <!-- Whatever you want the name to be. -->
   <property name="ServerPassword" value=""/> <!-- Password to gain entry to the server -->
   <property name="ServerMaxPlayerCount" alue="32"/> <!-- Maximum Concurrent Players -->
   <property name="ServerDescription" value="7 Days to Die Hosted by LacledesLAN"/> <!-- Whatever you want the description to be. -->
