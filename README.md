@@ -1,13 +1,17 @@
-# gameserver-srcds-7DaysToDie-Freeplay
-Docker image for freeplay [7 Days To Die](http://store.steampowered.com/app/251570) servers.
+# LL 7 Days to Die Freeplay Server
 
 # Linux Container
-[![](https://images.microbadger.com/badges/image/lacledeslan/gamesvr-srcds-7daystodie-freeplay:linux.svg)](https://microbadger.com/images/lacledeslan/gamesvr-srcds-7daystodie-freeplay:linux "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/lacledeslan/gamesvr-7daystodie-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-7daystodie-freeplay "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/lacledeslan/gamesvr-7daystodie-freeplay.svg)](https://microbadger.com/images/lacledeslan/gamesvr-7daystodie-freeplay "Get your own image badge on microbadger.com")
+
+## Download
+
 ```
-docker pull lacledeslan/gamesvr-srcds-7daystodie-freeplay:linux
+docker pull lacledeslan/gamesvr-7daystodie-freeplay
 ```
 
-# Build Triggers
-Automated builds of this image can be triggered by the following sources:
-* 
-* 
+## Run Interactive Server
+
+```
+docker run -it --rm --net=host lacledeslan/gamesvr-7daystodie-freeplay ./startserver.sh -configfile=serverconfig.xml
+```

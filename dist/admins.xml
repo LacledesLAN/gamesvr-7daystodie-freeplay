@@ -26,10 +26,10 @@
 		<admin steamID="76561198035321882" permission_level="0" /> <!-- Andy T -->
 		<admin steamID="76561197967875166" permission_level="0" /> <!-- BEan -->
 		<admin steamID="76561197967563669" permission_level="0" /> <!-- Duds -->
+        <admin steamID="76561197973303482" permission_level="0" /> <!-- Joe -->
 		<!-- <admin steamID="add Guid" permission_level="0" /> -->
     </admins>
 	<moderators>
-		<moderator steamID="76561197973303482" permission_level="10" /> <!-- Joe -->
 		<moderator steamID="76561197969596106" permission_level="10" /> <!-- Tony D -->
 		<moderator steamID="76561197964841820" permission_level="15" /> <!-- Brian W -->
 		<moderator steamID="76561197961771954" permission_level="15" /> <!-- Adam K -->
@@ -77,4 +77,4 @@
 	<blacklist>
 		<!-- <blacklisted steamID="" unbandate="" /> -->
 	</blacklist>
-</adminTools> 
+</adminTools>

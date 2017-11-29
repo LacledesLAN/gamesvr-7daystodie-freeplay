@@ -2,14 +2,14 @@
 <ServerSettings>
   <property name="ServerPort" value="26900"/> <!-- Port you want the server to listen on. -->
   <property name="ServerIsPublic" value="false"/> <!-- Should this server register to master server -->
-  <property name="ServerName" value="LacledesLAN 7daystodie"/> <!-- Whatever you want the name to be. -->
+  <property name="ServerName" value="LacledesLAN 7 Days to Die"/> <!-- Whatever you want the name to be. -->
   <property name="ServerPassword" value=""/> <!-- Password to gain entry to the server -->
   <property name="ServerMaxPlayerCount" alue="32"/> <!-- Maximum Concurrent Players -->
   <property name="ServerDescription" value="7 Days to Die Hosted by LacledesLAN"/> <!-- Whatever you want the description to be. -->
-  <property name="ServerWebsiteURL" value="https://www.lacledeslan.com"/> <!-- Website URL for the server -->
+  <property name="ServerWebsiteURL" value="https://lacledeslan.com"/> <!-- Website URL for the server -->
 
   <property name="GameWorld" value="Random Gen"/> <!-- Navezgane, Random Gen -->
-  <property name="GameName" value="LL18-dockerized"/> <!-- Whatever you want the game name to be THIS CONTROLS THE RANDOM GENERATION SEED -->
+  <property name="GameName" value="Laclede's LAN"/> <!-- Whatever you want the game name to be THIS CONTROLS THE RANDOM GENERATION SEED -->
   <property name="GameDifficulty" value="4"/> <!-- 0 - 5, 0=easiest, 5=hardest -->
   <property name="GameMode" value="GameModeSurvivalMP"/> <!-- GameModeSurvivalMP, GameModeSurvivalSP (MP has land protection) -->
 
