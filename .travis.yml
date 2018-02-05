@@ -10,6 +10,9 @@ git:
 services:
   - docker
 
+install:
+  - travis_wait 15 lacledeslan/gamesvr-7daystodie
+
 script:
   - docker version
   - docker build --no-cache --tag lltest/gamesvr-7daystodie-freeplay --tag lacledeslan/gamesvr-7daystodie-freeplay --build-arg BUILDNODE=TravisCI -f Dockerfile.linux .
