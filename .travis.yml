@@ -11,7 +11,7 @@ services:
   - docker
 
 install:
-  - travis_wait 15 lacledeslan/gamesvr-7daystodie
+  - travis_wait 15 docker pull lacledeslan/gamesvr-7daystodie
 
 script:
   - docker version
