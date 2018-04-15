@@ -22,7 +22,7 @@ notifications:
     secure: BPZH/xsql2ljK++IMV+xPNVhLREyFqMNokQbFq4qha0TfKf4HPsWsL+lqP670T6z1gHcEgShrb4yCbimoZH7PJ8AkOZcRnp6EHQHUvMsAcHHiXMziSBhZKLrjEobDKUUJT1WRYEshOlftZu9cLXHdR+MjwGEVF8HGytlTtt415WVZ7mzYUGAlp1YiyfNlDSmzR71BiYs5mJPGAyr9ruhLBllLe5FIfcxT+C+xZDjRFI1pO1Dho3Au9rJGLl0+xZLAoQ8gg5JKTyMG8yAHltyZ1RtITvV2+ixsN4H5Po0QuGWAF7C64A2jalTsCr5feWQmImQSSjRC1FXpg2uw4IW2iv91tw6uSUlnrzZJsqXM826sFcouXyPpQJUbMQ0r6VsW0ns0/fKIBMIQUs30H8awePOCtUp+hzuPJKx/d+60Kuni2z/S7hgihC1ZB5aWE4wY+RzxR8XSYTCs95ZvtO430HYMOC4Gee0Hs5xAbhTeQ+SFKG/FctPlZ3xdQTflLhMkaXPWp6c9mIE8WeBnG32W//zfw3UFT+m1dAW8wRJwZl4ejPLaMlYoo9C+e9nXWfJfrjo1EC9nXZHP/1LqtvEry1HXSmB1U66x7NBSOgQy5jQHd6aBaevgJdMSh26pIGNR//qPJVpouqqA7jD6pbemt6X90ljHLRWJY05jobIzps=
 
 before_deploy:
-  - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_PASS";
+  - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin;
 deploy:
   provider: script
   script: docker push lacledeslan/gamesvr-7daystodie-freeplay
